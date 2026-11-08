@@ -33,7 +33,16 @@
 
 > ตอนนี้เป็นข้อมูลตัวอย่าง (ร้านสมมติ 5 ร้าน 24 เมนู และรูปภาพ SVG ชั่วคราว)
 > ต้องแทนที่ด้วยข้อมูลจริง ราคาจริง และรูปที่กลุ่มถ่ายเอง แล้วระบุแหล่งที่มาที่นี่
-
+<img width="500" height="500" alt="S__7102470_0" src="https://github.com/user-attachments/assets/7aabacd7-3537-427c-9000-23e0a45cbae6" />
+<img width="500" height="500" alt="S__7102468_0" src="https://github.com/user-attachments/assets/2c45d075-eec7-4ddc-901b-7a2c385320e3" />
+<img width="500" height="500" alt="S__7102478_0" src="https://github.com/user-attachments/assets/7f711580-6500-406e-894e-9ea5531618f3" />
+<img width="500" height="500" alt="S__7102476_0" src="https://github.com/user-attachments/assets/a30d7dc5-ebe1-46d2-9eb8-772e9084bfbc" />
+<img width="500" height="500" alt="S__7102474_0" src="https://github.com/user-attachments/assets/8d7cf929-2f66-478f-a4cb-ea10adc03c0e" />
+<img width="500" height="500" alt="S__7102473_0" src="https://github.com/user-attachments/assets/073dc683-0492-4ee6-86a3-84e980771d78" />
+<img width="500" height="500" alt="S__7102471_0" src="https://github.com/user-attachments/assets/c73b8f5f-191e-454e-a908-e93f411cca72" />
+<img width="500" height="500" alt="S__7102469_0" src="https://github.com/user-attachments/assets/d625a9fa-b00b-4708-905a-352b8d69e247" />
+<img width="500" height="500" alt="S__77611010" src="https://github.com/user-attachments/assets/3f0c3675-5d9e-415c-a553-bd12de08cde3" />
+<img width="500" height="500" alt="S__7102475_0" src="https://github.com/user-attachments/assets/8bef2b50-c61a-4470-b37e-95da88544dd3" />
 ## ผล Lighthouse (Accessibility)
 
 <img width="1917" height="871" alt="image" src="https://github.com/user-attachments/assets/c0afc039-b4fb-4851-9005-41e82f425020" />
