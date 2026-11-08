@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>เมนูทั้งหมด | Canteen Guide</title>
+  <meta name="description" content="เมนูอาหารและเครื่องดื่มทุกร้าน พร้อมตัวกรองประเภท ช่วงราคา ฮาลาล มังสวิรัติ และการเรียงราคา">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/common.js" defer></script>
+  <script src="js/menu.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Canteen Guide</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav-list">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="menu.html" aria-current="page">เมนูทั้งหมด</a></li>
+          <li><a href="shops.html">ร้านอาหาร</a></li>
+          <li><a href="review.html">รีวิว</a></li>
+          <li><a href="cart.html" class="cart-link" aria-label="ตะกร้า 0 รายการ">ตะกร้า <span id="cart-count" class="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+
+    <div class="container">
+      <h1 class="page-title">เมนูทั้งหมด</h1>
+      <div class="menu-layout">
+        <form id="filter-form" class="panel filter-form" role="search" aria-labelledby="filter-title">
+          <h2 id="filter-title">ตัวกรองและการเรียงลำดับ</h2>
+          <div class="field">
+            <label for="q">ค้นหาชื่อเมนูหรือร้าน</label>
+            <input type="search" id="q" name="q" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="shop">ร้าน</label>
+            <select id="shop" name="shop"><option value="">ทุกร้าน</option></select>
+          </div>
+          <div class="field">
+            <label for="category">ประเภท</label>
+            <select id="category" name="category"><option value="">ทุกประเภท</option></select>
+          </div>
+          <div class="field">
+            <label for="price">ช่วงราคา</label>
+            <select id="price" name="price">
+              <option value="">ทุกราคา</option>
+              <option value="u30">ไม่เกิน 30 บาท</option>
+              <option value="31-50">31–50 บาท</option>
+              <option value="51-80">51–80 บาท</option>
+              <option value="o80">มากกว่า 80 บาท</option>
+            </select>
+          </div>
+          <fieldset class="field">
+            <legend>ป้ายอาหาร</legend>
+            <div class="checks">
+              <div class="check"><input type="checkbox" id="halal" name="halal" value="1"><label for="halal">ฮาลาล</label></div>
+              <div class="check"><input type="checkbox" id="vegetarian" name="vegetarian" value="1"><label for="vegetarian">มังสวิรัติ</label></div>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="sort">เรียงลำดับ</label>
+            <select id="sort" name="sort">
+              <option value="">ตามลำดับร้าน</option>
+              <option value="price-asc">ราคาน้อยไปมาก</option>
+              <option value="price-desc">ราคามากไปน้อย</option>
+            </select>
+          </div>
+          <button type="reset" class="btn btn-secondary">ล้างตัวกรอง</button>
+        </form>
+
+        <section aria-labelledby="results-title">
+          <h2 id="results-title">รายการเมนู</h2>
+          <p id="result-count" class="meta" role="status" aria-live="polite"></p>
+          <div id="menu-grid" class="card-grid"><p class="loading">กำลังโหลดข้อมูล…</p></div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Canteen Guide · Smart Campus · SC17332 Mini Project กลุ่มที่ 2</p>
+    </div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

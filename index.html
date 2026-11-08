@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>หน้าแรก | Canteen Guide</title>
+  <meta name="description" content="คู่มือโรงอาหารมหาวิทยาลัย ดูเมนู ราคา ฮาลาล มังสวิรัติ และวางแผนงบค่าอาหาร">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/common.js" defer></script>
+  <script src="js/index.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Canteen Guide</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">หน้าแรก</a></li>
+          <li><a href="menu.html">เมนูทั้งหมด</a></li>
+          <li><a href="shops.html">ร้านอาหาร</a></li>
+          <li><a href="review.html">รีวิว</a></li>
+          <li><a href="cart.html" class="cart-link" aria-label="ตะกร้า 0 รายการ">ตะกร้า <span id="cart-count" class="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">กินอะไรดีวันนี้ ดูเมนูและราคาทุกร้านในโรงอาหารได้ที่เดียว</h1>
+        <p class="hero-lead">กรองตามประเภท ราคา ฮาลาล มังสวิรัติ แล้วใส่ตะกร้าเพื่อดูราคารวมก่อนเดินไปสั่ง</p>
+        <form class="search-form" action="menu.html" method="get" role="search">
+          <label for="home-q">ค้นหาเมนูหรือชื่อร้าน</label>
+          <div class="search-row">
+            <input type="search" id="home-q" name="q" placeholder="เช่น ข้าวหมกเนื้อ ข้าวผัดหมู" autocomplete="off">
+            <button type="submit" class="btn btn-primary">ค้นหา</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="section panel" aria-labelledby="random-title">
+        <h2 id="random-title">ยังเลือกไม่ได้? ให้เราสุ่มให้</h2>
+        <p id="random-hint" class="meta"></p>
+        <button type="button" id="random-btn" class="btn btn-primary">วันนี้กินอะไรดี?</button>
+        <div id="random-result" class="random-result" aria-live="polite"></div>
+      </section>
+
+      <section class="section" aria-labelledby="shops-title">
+        <h2 id="shops-title">ร้านแนะนำ</h2>
+        <p class="meta">เรียงจากคะแนนรีวิวเฉลี่ยสูงสุด</p>
+        <div id="featured-shops" class="card-grid"><p class="loading">กำลังโหลดข้อมูล…</p></div>
+        <p class="more"><a href="shops.html">ดูร้านทั้งหมด</a></p>
+      </section>
+
+      <section class="section" aria-labelledby="menus-title">
+        <h2 id="menus-title">เมนูแนะนำ</h2>
+        <div id="popular-menus" class="card-grid"><p class="loading">กำลังโหลดข้อมูล…</p></div>
+        <p class="more"><a href="menu.html">ดูเมนูทั้งหมด</a></p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Canteen Guide · Smart Campus · SC17332 Mini Project กลุ่มที่ 2</p>
+    </div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

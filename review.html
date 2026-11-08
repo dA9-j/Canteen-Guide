@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>รีวิวร้านอาหาร | Canteen Guide</title>
+  <meta name="description" content="เขียนรีวิวร้านอาหาร ให้คะแนน 1–5 และดูรีวิวล่าสุดพร้อมคะแนนเฉลี่ยของแต่ละร้าน">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/common.js" defer></script>
+  <script src="js/review.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Canteen Guide</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav-list">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="menu.html">เมนูทั้งหมด</a></li>
+          <li><a href="shops.html">ร้านอาหาร</a></li>
+          <li><a href="review.html" aria-current="page">รีวิว</a></li>
+          <li><a href="cart.html" class="cart-link" aria-label="ตะกร้า 0 รายการ">ตะกร้า <span id="cart-count" class="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+
+    <div class="container">
+      <h1 class="page-title">รีวิวร้านอาหาร</h1>
+      <div class="review-layout">
+        <section class="panel" aria-labelledby="form-title">
+          <h2 id="form-title">เขียนรีวิว</h2>
+          <form id="review-form" novalidate>
+            <div class="field">
+              <label for="shop">ร้านที่ต้องการรีวิว</label>
+              <select id="shop" name="shop" required aria-describedby="shop-error">
+                <option value="">เลือกร้าน</option>
+              </select>
+              <p id="shop-error" class="field-error" role="alert"></p>
+            </div>
+
+            <fieldset class="field" aria-describedby="rating-hint rating-error">
+              <legend>คะแนน</legend>
+              <div class="rating-options">
+                <span class="rating-option"><input type="radio" id="rating-1" name="rating" value="1" required><label for="rating-1">1<span class="visually-hidden"> คะแนน</span></label></span>
+                <span class="rating-option"><input type="radio" id="rating-2" name="rating" value="2"><label for="rating-2">2<span class="visually-hidden"> คะแนน</span></label></span>
+                <span class="rating-option"><input type="radio" id="rating-3" name="rating" value="3"><label for="rating-3">3<span class="visually-hidden"> คะแนน</span></label></span>
+                <span class="rating-option"><input type="radio" id="rating-4" name="rating" value="4"><label for="rating-4">4<span class="visually-hidden"> คะแนน</span></label></span>
+                <span class="rating-option"><input type="radio" id="rating-5" name="rating" value="5"><label for="rating-5">5<span class="visually-hidden"> คะแนน</span></label></span>
+              </div>
+              <p id="rating-hint" class="meta">1 = ควรปรับปรุง, 5 = ดีมาก</p>
+              <p id="rating-error" class="field-error" role="alert"></p>
+            </fieldset>
+
+            <div class="field">
+              <label for="reviewer">ชื่อหรือชื่อเล่น</label>
+              <input type="text" id="reviewer" name="reviewer" required minlength="2" maxlength="30"
+                     pattern="[A-Za-z0-9ก-๙ _.\-]{2,30}" autocomplete="nickname"
+                     title="2–30 ตัวอักษร ใช้ได้เฉพาะตัวอักษร ตัวเลข เว้นวรรค . _ -"
+                     aria-describedby="reviewer-error">
+              <p id="reviewer-error" class="field-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="comment">ความคิดเห็น</label>
+              <textarea id="comment" name="comment" rows="4" required minlength="10" maxlength="300"
+                        aria-describedby="comment-count comment-error"></textarea>
+              <p id="comment-count" class="meta">0 / 300 ตัวอักษร</p>
+              <p id="comment-error" class="field-error" role="alert"></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary">ส่งรีวิว</button>
+            <p id="form-message" role="status"></p>
+          </form>
+        </section>
+
+        <div>
+          <section class="section-tight" aria-labelledby="summary-title">
+            <h2 id="summary-title">คะแนนเฉลี่ยรายร้าน</h2>
+            <div id="shop-summary"><p class="loading">กำลังโหลดข้อมูล…</p></div>
+          </section>
+          <section class="section" aria-labelledby="latest-title">
+            <h2 id="latest-title">รีวิวล่าสุด</h2>
+            <div id="review-list" class="review-list"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Canteen Guide · Smart Campus · SC17332 Mini Project กลุ่มที่ 2</p>
+    </div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

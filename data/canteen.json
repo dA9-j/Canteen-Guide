@@ -1,0 +1,41 @@
+{
+  "shops": [
+    { "id": "s01", "name": "ร้านหิวป่ะล่ะ", "zone": "โรงอาหารกลาง", "open": "07:00", "close": "14:00", "description": "ร้านอาหารตามสั่งทำสดทุกวัน" },
+    { "id": "s02", "name": "ก๋วยเตี๋ยวเจ๊แตน (เจ้าเก่า)", "zone": "โรงอาหารกลาง", "open": "08:00", "close": "15:00", "description": "ก๋วยเตี๋ยวน้ำตกและน้ำใส สูตรเข้มข้น" },
+    { "id": "s03", "name": "ขนมจีนน้ำยา", "zone": "โรงอาหารกลาง", "open": "09:00", "close": "16:00", "description": "ขนมจีนน้ำยาสูตรเด็ด" },
+    { "id": "s04", "name": "เฮือนแม่หยิน", "zone": "โรงอาหารกลาง", "open": "10:00", "close": "15:00", "description": "ข้าวขาหมูและข้าวซอยไก่อร่อยกลมกล่อมลงตัว" },
+    { "id": "s05", "name": "นารีย๊ะห์ ฮาลาล", "zone": "โรงอาหารกลาง", "open": "10:00", "close": "15:00", "description": "ร้านอาหารฮาลาล ข้าวหมกไก่และข้าวหมกเนื้อ / ไก่" }
+  ],
+  "menus": [
+    { "id": "m001", "shopId": "s01", "name": "ข้าวกะเพราไก่ไข่ดาว", "category": "อาหารจานเดียว", "price": 45, "kcal": 620, "tags": ["เผ็ด"], "halal": false, "vegetarian": false, "image": "images/m001.svg" },
+    { "id": "m002", "shopId": "s01", "name": "ผัดพริกแกงหมู", "category": "อาหารจานเดียว", "price": 50, "kcal": 580, "tags": ["เผ็ด"], "halal": false, "vegetarian": false, "image": "images/m002.svg" },
+    { "id": "m003", "shopId": "s01", "name": "ข้าวผัดหมู", "category": "อาหารจานเดียว", "price": 45, "kcal": 560, "tags": [], "halal": false, "vegetarian": false, "image": "images/m003.svg" },
+    { "id": "m004", "shopId": "s01", "name": "ข้าวผัดผัก", "category": "อาหารจานเดียว", "price": 40, "kcal": 400, "tags": [], "halal": false, "vegetarian": true, "image": "images/m004.svg" },
+    { "id": "m005", "shopId": "s02", "name": "ก๋วยเตี๋ยวหมูตุ๋น", "category": "ก๋วยเตี๋ยว", "price": 40, "kcal": 400, "tags": [], "halal": false, "vegetarian": false, "image": "images/m005.svg" },
+    { "id": "m006", "shopId": "s02", "name": "ก๋วยเตี๋ยวน่องไก่", "category": "ก๋วยเตี๋ยว", "price": 40, "kcal": 450, "tags": [], "halal": false, "vegetarian": false, "image": "images/m006.svg" },
+    { "id": "m007", "shopId": "s02", "name": "ก๋วยเตี๋ยวเย็นตาโฟ (ต้มยำ)", "category": "ก๋วยเตี๋ยว", "price": 45, "kcal": 420, "tags": ["เผ็ด"], "halal": false, "vegetarian": false, "image": "images/m007.svg" },
+    { "id": "m008", "shopId": "s02", "name": "ก๋วยเตี๋ยวเป็ด", "category": "ก๋วยเตี๋ยว", "price": 50, "kcal": 450, "tags": [], "halal": false, "vegetarian": false, "image": "images/m008.svg" },
+    { "id": "m009", "shopId": "s03", "name": "ขนมจีนน้ำยากระทิ ลูกชิ้นปลา", "category": "ขนมจีน", "price": 40, "kcal": 470, "tags": [], "halal": false, "vegetarian": false, "image": "images/m009.svg" },
+    { "id": "m010", "shopId": "s03", "name": "ขนมจีนน้ำยาป่า", "category": "ขนมจีน", "price": 40, "kcal": 450, "tags": [], "halal": false, "vegetarian": false, "image": "images/m010.svg" },
+    { "id": "m011", "shopId": "s03", "name": "ขนมจีนแกงเขียวหวานไก่", "category": "ขนมจีน", "price": 40, "kcal": 490, "tags": [], "halal": false, "vegetarian": false, "image": "images/m011.svg" },
+    { "id": "m012", "shopId": "s03", "name": "ขนมจีนน้ำเงี้ยวไก่", "category": "ขนมจีน", "price": 45, "kcal": 450, "tags": [], "halal": false, "vegetarian": false, "image": "images/m012.svg" },
+    { "id": "m013", "shopId": "s04", "name": "ข้าวซอยไก่", "category": "อาหารจานเดียว", "price": 45, "kcal": 480, "tags": [], "halal": false, "vegetarian": false, "image": "images/m013.svg" },
+    { "id": "m014", "shopId": "s04", "name": "ข้าวขาหมู", "category": "อาหารจานเดียว", "price": 50, "kcal": 520, "tags": [], "halal": false, "vegetarian": false, "image": "images/m014.svg" },
+    { "id": "m015", "shopId": "s04", "name": "ต้มจืดเต้าหู้ผักกาด", "category": "อาหารจานเดียว", "price": 40, "kcal": 220, "tags": [], "halal": false, "vegetarian": true, "image": "images/m015.svg" },
+    { "id": "m016", "shopId": "s04", "name": "สลัดผัก", "category": "อาหารจานเดียว", "price": 40, "kcal": 250, "tags": [], "halal": false, "vegetarian": true, "image": "images/m016.svg" },
+    { "id": "m017", "shopId": "s05", "name": "แกงมัสมั่นเนื้อ", "category": "อาหารจานเดียว", "price": 55, "kcal": 520, "tags": [], "halal": true, "vegetarian": false, "image": "images/m017.svg" },
+    { "id": "m017", "shopId": "s05", "name": "ข้าวหมกเนื้อ", "category": "อาหารจานเดียว", "price": 60, "kcal": 550, "tags": [], "halal": true, "vegetarian": false, "image": "images/m018.svg" },  
+    { "id": "m017", "shopId": "s05", "name": "ซุปหางวัว", "category": "อาหารจานเดียว", "price": 60, "kcal": 500, "tags": [], "halal": true, "vegetarian": false, "image": "images/m019.svg" },
+    { "id": "m017", "shopId": "s05", "name": "ข้าวหมกไก่", "category": "อาหารจานเดียว", "price": 50, "kcal": 480, "tags": [], "halal": true, "vegetarian": false, "image": "images/m020.svg" }
+  ],
+  "reviews": [
+    { "id": "r001", "shopId": "s01", "name": "น้องมะปราง", "rating": 5, "comment": "กะเพราหอมมาก ไข่ดาวกรอบ ราคาไม่แพง คนไม่เยอะช่วงสิบเอ็ดโมง", "date": "2026-10-20T11:30:00.000Z" },
+    { "id": "r002", "shopId": "s01", "name": "พี่เจ", "rating": 4, "comment": "ข้าวผัดผักอร่อยเหาะ แต่ช่วงเที่ยงต้องรอคิวนาน", "date": "2026-10-22T12:10:00.000Z" },
+    { "id": "r003", "shopId": "s02", "name": "บีม", "rating": 4, "comment": "น้ำซุปเข้มข้นดี ชามไม่ใหญ่มาก สั่งสองชามกำลังพอดี", "date": "2026-10-24T10:45:00.000Z" },
+    { "id": "r004", "shopId": "s02", "name": "ฟ้าใส", "rating": 3, "comment": "รสชาติโอเค แต่ที่นั่งใกล้ร้านค่อนข้างร้อน", "date": "2026-10-27T13:00:00.000Z" },
+    { "id": "r005", "shopId": "s03", "name": "อ้อมกอด", "rating": 5, "comment": "น้ำยาขนมจีน รสชาติเข้มข้น ถูกปากเราดี", "date": "2026-10-28T12:20:00.000Z" },
+    { "id": "r006", "shopId": "s04", "name": "ใบเตย", "rating": 5, "comment": "ได้ลองข้าวซอยไก่รสชาติเจ้มจ้นมากๆ", "date": "2026-10-29T11:50:00.000Z" },
+    { "id": "r006", "shopId": "s05", "name": "ใบไม้", "rating": 5, "comment": "ข้าวหมกเนื้อหอมเนื้อสุด ๆ", "date": "2026-10-29T11:50:00.000Z" },
+    { "id": "r006", "shopId": "s05", "name": "ฮาลีฟ", "rating": 4, "comment": "ซุปหางวัวอร่อยมาก ๆ", "date": "2026-10-20T11:50:00.000Z" }
+  ]
+}

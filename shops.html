@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ร้านอาหาร | Canteen Guide</title>
+  <meta name="description" content="รายชื่อร้านอาหารในมหาวิทยาลัย เวลาเปิด–ปิด และคะแนนรีวิวเฉลี่ย">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/common.js" defer></script>
+  <script src="js/shops.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Canteen Guide</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav-list">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="menu.html">เมนูทั้งหมด</a></li>
+          <li><a href="shops.html" aria-current="page">ร้านอาหาร</a></li>
+          <li><a href="review.html">รีวิว</a></li>
+          <li><a href="cart.html" class="cart-link" aria-label="ตะกร้า 0 รายการ">ตะกร้า <span id="cart-count" class="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+
+    <div class="container">
+      <h1 class="page-title">ร้านอาหารในมหาวิทยาลัย</h1>
+      <section aria-labelledby="shops-list-title">
+        <h2 id="shops-list-title">รายชื่อร้านทั้งหมด</h2>
+        <p class="meta">สถานะเปิด–ปิดคำนวณจากเวลาในเครื่องของคุณ</p>
+        <div id="shop-grid" class="card-grid"><p class="loading">กำลังโหลดข้อมูล…</p></div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Canteen Guide · Smart Campus · SC17332 Mini Project กลุ่มที่ 2</p>
+    </div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
